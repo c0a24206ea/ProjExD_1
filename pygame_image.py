@@ -24,10 +24,10 @@ def main():
             tori_rect.move_ip((0,-1))
         if key_lst[pg.K_DOWN]:
             tori_rect.move_ip((0, +1))
-        if key_lst[pg.K_LEFT]:
-            tori_rect.move_ip((-1, 0))
         if key_lst[pg.K_RIGHT]:
-            tori_rect.move_ip((+1, 0))
+            tori_rect.move_ip((+2, 0))
+        else:
+            tori_rect.move_ip((-1, 0))
         x = tmr%3200 #練習9
         screen.blit(bg_img, [-x, 0]) #練習6
         screen.blit(bg_img2, [-x+1600, 0]) #練習7
