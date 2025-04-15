@@ -18,7 +18,8 @@ def main():
             if event.type == pg.QUIT: return
 
         x = tmr
-        screen.blit(bg_img, [-x, 0])
+        screen.blit(bg_img, [-x, 0]) #練習6
+        screen.blit(bg_img, [-x+1600, 0]) #練習7
         screen.blit(tori_img, [300,200])
         pg.display.update()
         tmr += 1        
